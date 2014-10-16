@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Only the driving paths for the lanes on the south side of a junction are given, the other driving paths
+can be derived by turning these driving paths, as each junction is symmetric. -->
+<drivingPaths junctionSize="2000">
+  <lane id="0">
+    <segment type="point" x="1060" y="2000" />
+    <segment type="turn" x="1060" y="1400" size="580" />
+    <!--<segment type="point" x="0" y="820" />-->
+    <trafficLight distance="472" />
+  </lane>
+  <lane id="1">
+    <segment type="point" x="1180" y="2000" />
+    <!--<segment type="point" x="1180" y="0" />-->
+    <segment type="point" x="1180" y="480" />
+    <trafficLight distance="472" />
+  </lane>
+  <lane id="2">
+    <segment type="point" x="1300" y="2000" />
+    <segment type="turn" x="1300" y="1400" size="220" />
+    <!--<segment type="point" x="2000" y="1180" />-->
+    <trafficLight distance="472" />
+  </lane>
+</drivingPaths>

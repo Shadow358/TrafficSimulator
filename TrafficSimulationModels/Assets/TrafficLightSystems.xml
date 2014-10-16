@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<trafficLightSystems>
+  <trafficLightSystem name="Basic" defaultPhaseTime="20">
+    <phase name="North/South 1" abbreviation="NS1">
+      <subphase name="Right and straight">
+        <group name="Right and straight">
+          <trafficLight direction="0" lane="1" />
+          <trafficLight direction="0" lane="2" />
+          <trafficLight direction="2" lane="1" />
+          <trafficLight direction="2" lane="2" />
+        </group>
+      </subphase>
+    </phase>
+    <phase name="North/South 2" abbreviation="NS2">
+      <subphase name="Left">
+        <group name="Left">
+          <trafficLight direction="0" lane="0" />
+          <trafficLight direction="2" lane="0" />
+        </group>
+      </subphase>
+    </phase>
+    <phase name="West/East 1" abbreviation="WE1">
+      <subphase name="Right and straight">
+        <group name="Right and straight">
+          <trafficLight direction="1" lane="1" />
+          <trafficLight direction="1" lane="2" />
+          <trafficLight direction="3" lane="1" />
+          <trafficLight direction="3" lane="2" />
+        </group>
+      </subphase>
+    </phase>
+    <phase name="West/East 2" abbreviation="WE2">
+      <subphase name="Left">
+        <group name="Left">
+          <trafficLight direction="1" lane="0" />
+          <trafficLight direction="3" lane="0" />
+        </group>
+      </subphase>
+    </phase>
+  </trafficLightSystem>
+  <trafficLightSystem name="Crossing" defaultPhaseTime="20">
+    <phase name="North/South 1" abbreviation="NS1">
+      <subphase name="Right and pedestrians">
+        <group name="Right">
+          <trafficLight direction="0" lane="2" />
+          <trafficLight direction="2" lane="2" />
+        </group>
+        <group name="Pedestrians">
+          <trafficLight direction="0" lane="3" />
+          <trafficLight direction="2" lane="3" />
+        </group>
+      </subphase>
+      <subphase name="Straight">
+        <group name="Straight">
+          <trafficLight direction="0" lane="1" />
+          <trafficLight direction="2" lane="1" />
+        </group>
+      </subphase>
+    </phase>
+    <phase name="North/South 2" abbreviation="NS2">
+      <subphase name="Left">
+        <group name="Left">
+          <trafficLight direction="0" lane="0" />
+          <trafficLight direction="2" lane="0" />
+        </group>
+      </subphase>
+    </phase>
+    <phase name="West/East 1" abbreviation="WE1">
+      <subphase name="Right and pedestrians">
+        <group name="Right">
+          <trafficLight direction="1" lane="2" />
+          <trafficLight direction="3" lane="2" />
+        </group>
+        <group name="Pedestrians">
+          <trafficLight direction="1" lane="3" />
+          <trafficLight direction="3" lane="3" />
+        </group>
+      </subphase>
+      <subphase name="Straight">
+        <group name="Straight">
+          <trafficLight direction="1" lane="1" />
+          <trafficLight direction="3" lane="1" />
+        </group>
+      </subphase>
+    </phase>
+    <phase name="West/East 2" abbreviation="WE2">
+      <subphase name="Left">
+        <group name="Left">
+          <trafficLight direction="1" lane="0" />
+          <trafficLight direction="3" lane="0" />
+        </group>
+      </subphase>
+    </phase>
+  </trafficLightSystem>
+</trafficLightSystems>
